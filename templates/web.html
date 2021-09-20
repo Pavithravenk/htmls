@@ -1,0 +1,39 @@
+{% load static %}
+<!Doctype html>
+<html>
+<head>
+<title>flight ticket booking</title>
+<link rel="stylesheet" href={% static "css/web.css" %}>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+<center>
+<h1 id="head">WELCOME TO EMIRATES</h1>
+<form method="post">
+<p id="user">User name<br>
+<input type="text" name="username">
+</p>
+<p id="pass">Password<br>
+<input type="password" name="pwd">
+</p>
+<button type="submit" form="nameform" value="Submit" align="center"><a href="flight2.html">Submit</a></button>
+</form>
+</center>
+</body>
+<body class="container">
+                    <i class="glyphicon glyphicon-envelope"style="font-size:48px;color:black;"></i><br>
+                    <i class="glyphicon glyphicon-thumbs-up" style="font-size:48px;color:black;margin-bottom:20px;"></i>
+<ol>
+  <%for i in data %}
+  <li>{{i.book_name}}</li>
+  <li>{{i.author_name}}</li>
+  <li>{{i.comments}}</li>
+  {%endfor%}
+</ol>
+
+
+
+</body>
+
+</html>

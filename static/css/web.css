@@ -1,0 +1,22 @@
+body {
+  background-image: url("/static/images/emi.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#head{
+	font-family:Times New Roman;
+	font-size:30px;
+	font-weight:bold;
+	color:red;
+}
+#user{
+	font-family:Times New Roman;
+	font-size:20px;
+	color:red;
+}
+#pass{
+	font-family:Times New Roman;
+	font-size:20px;
+	color:red;
+}
